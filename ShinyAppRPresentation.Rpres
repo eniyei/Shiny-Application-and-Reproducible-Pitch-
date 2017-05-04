@@ -25,7 +25,6 @@ A quick look at the data set
 ========================================================
 type: sub-section
 ```{r, echo=FALSE}
-library(ggplot2)
 head(diamonds)
 ```
 
