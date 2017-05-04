@@ -1,0 +1,54 @@
+Shiny Application and Reproducible Pitch 
+========================================================
+font-family: 'Helvetica'
+class: small-code
+author: eniyei 
+date: 04/05/2017
+
+<small>Developing Data Products Course Project </br>Data Science Specialization on Coursera.com  </small> 
+
+
+Objective
+========================================================
+type: sub-section
+This app was built for the course Developing Data Products as part of the Coursera Data Science Specialization. It predicts the price in $ for a diamond based on a few attributes. You can see it by clicking the first link below and view the source code by clicking the second link.
+- [ShinyApp](https://eniyei.shinyapps.io/shinyappdeploy/)
+
+<span style="font-size:large; font-weight:bold; color:grey;">Click to view the ShinyApp</span>
+- [GitHub](https://github.com/eniyei/Shiny-Application-and-Reproducible-Pitch-) 
+
+<span style="font-size:large; font-weight:bold; color:grey;">Click to view the Source Code on GitHub</span>
+
+
+
+A quick look at the data set
+========================================================
+type: sub-section
+```{r, echo=FALSE}
+library(ggplot2)
+head(diamonds)
+```
+
+
+Linear Regression Model
+========================================================
+type: sub-section
+<span style="color:grey;">The linear regression model behind the app:</span>
+<span style="font-size:large; color:grey;">*/It is not fancy but it does the job for this assignment/*</span>
+**lm(price ~ carat + cut + clarity + color + x + y + z, data = diamonds)**
+<span style="color:grey;">Residual standard error: </span> **1132 on 53918 degrees of freedom**
+<span style="color:grey;">Multiple R-squared:</span> **0.9195**
+<span style="color:grey;">Adjusted R-squared:</span> **0.9194**
+<span style="color:grey;">F-statistic: </span>**2.931e+04 on 21 and 53918 DF**
+<span style="color:grey;">p-value:</span> **< 2.2e-16**
+
+
+========================================================
+type: sub-section
+
+<div align="center">
+<img src="Rplot.png" width=840 height=478>
+</div>
+<center> <h3>**Thank you for your time!**</h3> </center>
+
+
